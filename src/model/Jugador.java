@@ -48,7 +48,6 @@ public class Jugador {
 		this.nombre = nombre;
 	}
 	
-	@XmlElement(name="alta")
 	public Alta getAlta() {
 		return alta;
 	}
