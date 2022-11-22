@@ -13,6 +13,7 @@ public class Jugadores {
 
 	}
 
+
 	@XmlElement(name="jugador")
 	public ArrayList<Jugador> getJugadores() {
 		return jugadores;
