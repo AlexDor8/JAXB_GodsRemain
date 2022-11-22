@@ -6,8 +6,9 @@ import dao.Unmarshall;
 public class GodsRemain {
 
 	public static void main(String[] args) {
-		(new Unmarshall()).init();
-		(new EntitiesController()).lecturaFichero();
+		Unmarshall unmarshall = new Unmarshall();
+		unmarshall.initJugadores();
+		(new EntitiesController()).lecturaFichero(unmarshall.getJugadores1());
 	}
 
 }

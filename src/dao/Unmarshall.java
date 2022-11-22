@@ -1,6 +1,7 @@
 package dao;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -10,7 +11,19 @@ import model.Jugador;
 import model.Jugadores;
 
 public class Unmarshall {
-	public void init() {
+
+	private ArrayList<Jugador> jugadores1 = new ArrayList<Jugador>();
+	
+
+	public ArrayList<Jugador> getJugadores1() {
+		return jugadores1;
+	}
+
+	public void setJugadores1(ArrayList<Jugador> jugadores1) {
+		this.jugadores1 = jugadores1;
+	}
+
+	public void initJugadores() {
 		Jugadores jugadores = null;
 		try {
 			JAXBContext context = JAXBContext.newInstance(Jugadores.class);
@@ -23,7 +36,9 @@ public class Unmarshall {
 		else {
 			for (Jugador j : jugadores.getJugadores()) {
 				System.out.println(j);
+				
 			}
+			jugadores1.addAll(jugadores.getJugadores());
 		}
 	}
 	

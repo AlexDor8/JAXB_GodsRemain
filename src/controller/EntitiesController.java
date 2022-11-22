@@ -7,48 +7,50 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import dao.Unmarshall;
 import model.Jugador;
 import model.Jugadores;
 
 public class EntitiesController {
-	
-	private ArrayList<String> todasAcciones = new ArrayList<String>();
-	Jugadores jugadores = new Jugadores();
-	ArrayList<Jugador> jugadores1 = jugadores.getJugadores();
-	 
-	
+
+	ArrayList<Jugador> jugadores;
+
 	private File ficheroAcciones() {
 		String rutaDirectorio = System.getProperty("user.dir");
-		String rutaFichero = rutaDirectorio  + File.separator + "resources" + File.separator
-				+ "acciones.txt";
+		String rutaFichero = rutaDirectorio + File.separator + "resources" + File.separator + "acciones.txt";
 		File ficheroAcciones = new File(rutaFichero);
 		return ficheroAcciones;
 	}
-	
-	public void lecturaFichero() {
+
+	public void lecturaFichero(ArrayList<Jugador> jugadores) {
+		this.jugadores = jugadores;
 		BufferedReader br = null;
 		try {
 			String linea = "";
 
 			br = new BufferedReader(new FileReader(ficheroAcciones()));
 			while ((linea = br.readLine()) != null) {
-				todasAcciones.add(linea);
-			}
-			for (int iii = 0;iii<=jugadores1.size();iii++) {
-				System.out.println(jugadores1.size());
-			}
-			for (int i = 0;i<todasAcciones.size();i++) {
-				if (todasAcciones.get(i).contains("P")) {
-					for (int ii = 0;ii<jugadores1.size();ii++) {
-						if (todasAcciones.get(i).contains(Integer.toString(jugadores1.get(ii).getId()))) {
-							System.out.println("hola");
-						}else {
-							System.out.println("adios");
+				char accion = linea.charAt(0);
+				String[] acciones = linea.split("");
+				switch (acciones[0]) {
+				case "P":
+					System.out.println("Información del personaje:");
+					for (int i = 0; i < jugadores.size(); i++) {
+						if (Integer.toString(jugadores.get(i).getId()).equals(acciones[2])) {
+							System.out.println(jugadores.get(i));
 						}
 					}
+					break;
+				case "B":
+					break;
+				case "A":
+					break;
+				case "S":
+					break;
 				}
+
 			}
-			
+
 		} catch (FileNotFoundException e) {
 			System.out.println("Fichero no encontrado" + e.getMessage());
 		} catch (IOException e) {
@@ -60,8 +62,8 @@ public class EntitiesController {
 			} catch (IOException e) {
 				System.out.println("Error al cerrar el fichero");
 			}
-		
-	}
+
+		}
 	}
 
 }
