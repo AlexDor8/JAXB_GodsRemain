@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name="habilidad")
 public class Habilidad {
-	private int id;
+	private String id;
 	private String nombre;
 	private String tipo;
 	private Atributo[] atributos = {};
 	
-	public Habilidad(int id, String nombre, String tipo, Atributo[] atributos) {
+	public Habilidad(String id, String nombre, String tipo, Atributo[] atributos) {
 		this.id = id;
 		this.nombre = nombre;
 		this.tipo = tipo;
@@ -26,11 +26,11 @@ public class Habilidad {
 
 
 	@XmlAttribute(name="id")
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

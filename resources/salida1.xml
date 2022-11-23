@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jugadores>
+	<jugador id="1">
+		<nombre>Teseo</nombre>
+		<alta ciudad="Atenas">12/10/2022</alta>
+		<objetos>
+			<objeto name="balsamo">
+				<cantidad>13</cantidad>
+			</objeto>
+			<objeto name="revivir">
+				<cantidad>34</cantidad>
+			</objeto>
+			<objeto name="godcard">
+				<cantidad>22</cantidad>
+			</objeto>
+		</objetos>
+		<habilidades>
+			<habilidad id="082">
+				<atributo id="PS">23</atributo>
+				<atributo id="ATQ">34</atributo>
+				<atributo id="SATQ">44</atributo>
+				<atributo id="STA">32</atributo>
+				<atributo id="VEL">12</atributo>
+				<atributo id="DEF">30</atributo>
+				<atributo id="SDEF">20</atributo>
+				<nombre>Ares</nombre>
+				<tipo>fuego</tipo>
+			</habilidad>
+			<habilidad id="019">
+				<atributo id="PS">23</atributo>
+				<atributo id="ATQ">22</atributo>
+				<atributo id="SATQ">45</atributo>
+				<atributo id="STA">45</atributo>
+				<atributo id="VEL">30</atributo>
+				<atributo id="DEF">80</atributo>
+				<atributo id="SDEF">20</atributo>
+				<nombre>Zeus</nombre>
+				<tipo>rayo</tipo>
+			</habilidad>
+			<habilidad id="061">
+				<atributo id="PS">49</atributo>
+				<atributo id="ATQ">40</atributo>
+				<atributo id="SATQ">50</atributo>
+				<atributo id="STA">18</atributo>
+				<atributo id="VEL">60</atributo>
+				<atributo id="DEF">40</atributo>
+				<atributo id="SDEF">50</atributo>
+				<nombre>Poseidón</nombre>
+				<tipo>agua</tipo>
+			</habilidad>
+			<habilidad id="039">
+				<atributo id="PS">49</atributo>
+				<atributo id="ATQ">40</atributo>
+				<atributo id="SATQ">50</atributo>
+				<atributo id="STA">18</atributo>
+				<atributo id="VEL">60</atributo>
+				<atributo id="DEF">40</atributo>
+				<atributo id="SDEF">50</atributo>
+				<nombre>Atenea</nombre>
+				<tipo>sapiencia</tipo>
+			</habilidad>
+			<habilidad id="115">
+				<atributo id="PS">49</atributo>
+				<atributo id="ATQ">40</atributo>
+				<atributo id="SATQ">50</atributo>
+				<atributo id="STA">18</atributo>
+				<atributo id="VEL">60</atributo>
+				<atributo id="DEF">40</atributo>
+				<atributo id="SDEF">50</atributo>
+				<nombre>Aquiles</nombre>
+				<tipo>agua</tipo>
+			</habilidad>
+			<habilidad id="113">
+				<atributo id="PS">23</atributo>
+				<atributo id="ATQ">22</atributo>
+				<atributo id="SATQ">45</atributo>
+				<atributo id="STA">45</atributo>
+				<atributo id="VEL">30</atributo>
+				<atributo id="DEF">80</atributo>
+				<atributo id="SDEF">20</atributo>
+				<nombre></nombre>
+				<tipo></tipo>
+			</habilidad>
+		</habilidades>
+	</jugador>
+	<jugador id="2">
+		<nombre>Deméter</nombre>
+		<alta ciudad="Ceres">22/11/2020</alta>
+		<objetos>
+			<objeto name="revivir">
+				<cantidad>78</cantidad>
+			</objeto>
+			<objeto name="godcard">
+				<cantidad>12</cantidad>
+			</objeto>
+		</objetos>
+		<habilidades>
+			<habilidad id="061">
+				<atributo id="PS">23</atributo>
+				<atributo id="ATQ">22</atributo>
+				<atributo id="SATQ">45</atributo>
+				<atributo id="STA">45</atributo>
+				<atributo id="VEL">30</atributo>
+				<atributo id="DEF">80</atributo>
+				<atributo id="SDEF">20</atributo>
+				<nombre>Poseidón</nombre>
+				<tipo>agua</tipo>
+			</habilidad>
+			<habilidad id="025">
+				<atributo id="PS">49</atributo>
+				<atributo id="ATQ">40</atributo>
+				<atributo id="SATQ">50</atributo>
+				<atributo id="STA">18</atributo>
+				<atributo id="VEL">60</atributo>
+				<atributo id="DEF">40</atributo>
+				<atributo id="SDEF">50</atributo>
+				<nombre>Namor</nombre>
+				<tipo>agua</tipo>
+			</habilidad>
+			<habilidad id="105">
+				<atributo id="PS">49</atributo>
+				<atributo id="ATQ">40</atributo>
+				<atributo id="SATQ">50</atributo>
+				<atributo id="STA">18</atributo>
+				<atributo id="VEL">60</atributo>
+				<atributo id="DEF">40</atributo>
+				<atributo id="SDEF">50</atributo>
+				<nombre>Hydra</nombre>
+				<tipo>toxico</tipo>
+			</habilidad>
+			<habilidad id="138">
+				<atributo id="PS">49</atributo>
+				<atributo id="ATQ">40</atributo>
+				<atributo id="SATQ">50</atributo>
+				<atributo id="STA">18</atributo>
+				<atributo id="VEL">60</atributo>
+				<atributo id="DEF">40</atributo>
+				<atributo id="SDEF">50</atributo>
+				<nombre>Hefesto</nombre>
+				<tipo>fuego</tipo>
+			</habilidad>
+		</habilidades>
+	</jugador>
+</jugadores>

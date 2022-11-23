@@ -17,6 +17,13 @@ public class Atributo {
 	public Atributo() {
 
 	}
+	
+	
+	
+	public Atributo(int atributo, String id) {
+		this.atributo = atributo;
+		this.id = id;
+	}
 
 	@XmlAttribute(name="id")
 	public String getId() {
